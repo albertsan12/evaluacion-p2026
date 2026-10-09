@@ -23,3 +23,65 @@ img {
 body {
   font-size: 1.6rem;
 }
+
+.header {
+  background-color: #ffffff;
+}
+
+.hero {
+  background-color: black;
+}
+
+.subtitulo-rojo {
+  color: red;
+}
+
+.subtitulo-blanco {
+  color: white;
+}
+
+.texto-blanco {
+  color: white;
+}
+
+.btn{
+  text-decoration: none;
+  color: red;
+  padding: 1.5rem;
+}
+
+.footer {
+  background-color: black;
+}
+
+.texto-gris {
+  color: silver;
+}
+
+.seccion-pedidos {
+  background-color: silver;
+}
+
+.menu {
+  display: flex;
+}
+
+.seccion.contacto {
+  display: flex;
+  background-color: f2f0eb;
+}
+
+.navbar {
+  display: flex;
+  justify-content: end;
+  text-decoration: none;
+  color: black;
+}
+
+.contenido-superior {
+  display: flex;
+}
+
+contenido-inferior {
+  align-items: end;
+}
