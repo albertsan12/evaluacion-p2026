@@ -18,19 +18,19 @@
   <!-- ===================== INICIO HEADER ===================== -->
   <header>
     <div class="header">
-        <nav class="navbar-container">
-          <div class="titulo">
-            <a href="#">TAWENO SUSHI</a>
-          </div>
+       <nav class="navbar-container">
           <div div class="navbar">
-            <ul class="nav items">
+            <div class="titulo">
+              <a href="#">TAWENO SUSHI</a>
+            </div>
+            <ul class="nav-items">
               <li><a href="#">Inicio</a></li>
               <li><a href="#">Menú</a></li>
               <li><a href="#">Nosotros</a></li>
               <li><a href="#">Contacto</a></li>
             </ul>
           </div>
-      </nav>
+       </nav>
     </div>
     <section class="hero">
         <div>
@@ -50,25 +50,29 @@
   <!-- ===================== INICIO NUESTRO MENÚ ===================== -->
   <main>
     <section class="menu">
-      <h2>Nuestro menú</h2>
-      <div class="card-sushi">
-        <img src="img/sushi1.jpg" alt="Nigiri Salmón">
-        <h3>Nigiri Salmón</h3>
-        <p>Arroz con salmón fresco y wasabi.</p>
-        <span>$4.990</span>
-      </div>
-      <div class="card-sushi">
-        <img src="img/sushi2.jpg" alt="Roll Spicy Tuna">
-        <h3>Roll Spicy Tuna</h3>
-        <p>Atún, pepino, palta y sésamo.</p>
-        <span>$6.490</span>
-      </div>
-      <div class="sushi">
-        <img src="img/sushi3.jpg" alt="Tempura Roll">
-        <h3>Tempura Roll</h3>
-        <p>Camarón tempura y salsa teriyaki.</p>
-        <span>$6.990</span>
-      </div>
+      <article class="container">
+          <h2 class="subtitulo-menu">Nuestro menú</h2>
+        <div class="cards">
+          <div class="card-sushi">
+            <img src="img/sushi1.jpg" alt="Nigiri Salmón">
+            <h3>Nigiri Salmón</h3>
+            <p>Arroz con salmón fresco y wasabi.</p>
+            <span>$4.990</span>
+          </div>
+          <div class="card-sushi">
+            <img src="img/sushi2.jpg" alt="Roll Spicy Tuna">
+            <h3>Roll Spicy Tuna</h3>
+            <p>Atún, pepino, palta y sésamo.</p>
+            <span>$6.490</span>
+          </div>
+          <div class="card-sushi">
+            <img src="img/sushi3.jpg" alt="Tempura Roll">
+            <h3>Tempura Roll</h3>
+            <p>Camarón tempura y salsa teriyaki.</p>
+            <span>$6.990</span>
+          </div>
+        </div>
+      </article>
     </section>
 
     <!-- ===================== FIN NUESTRO MENÚ ===================== -->
@@ -76,52 +80,62 @@
 
     <!-- ===================== INICIO LOS MÁS PEDIDOS ===================== -->
     <section class="seccion-pedidos">
-      <h2>Los más pedidos</h2>
-      <p>Los platos que nuestros clientes eligen semana a semana.</p>
-
-      <ul>
-        <li>
-          <img src="img/sushi1.jpg" alt="Nigiri Salmón">
-          <span>Nigiri Salmón</span>
-          <span>$4.990</span>
-        </li>
-        <li>
-          <img src="img/sushi2.jpg" alt="Roll Spicy Tuna">
-          <span>Roll Spicy Tuna</span>
-          <span>$6.490</span>
-        </li>
-        <li>
-          <img src="img/sushi3.jpg" alt="Tempura Roll">
-          <span>Tempura Roll</span>
-          <span>$6.990</span>
-        </li>
-      </ul>
+      <div class="contenedor-pedidos">
+        <article class="columna-izquierda">
+          <h2>Los más pedidos</h2>
+          <p>Los platos que nuestros clientes eligen semana a semana.</p>
+        </article>
+        <div class="cards-pedidos">
+          <ul>
+            <li>
+              <img src="img/sushi1.jpg" alt="Nigiri Salmón">
+              <span>Nigiri Salmón</span>
+              <span>$4.990</span>
+            </li>
+            <li>
+              <img src="img/sushi2.jpg" alt="Roll Spicy Tuna">
+              <span>Roll Spicy Tuna</span>
+              <span>$6.490</span>
+            </li>
+            <li class="card-pedidos">
+              <img src="img/sushi3.jpg" alt="Tempura Roll">
+              <span>Tempura Roll</span>
+              <span>$6.990</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
     <!-- ===================== FIN LOS MÁS PEDIDOS ===================== -->
 
 
     <!-- ===================== INICIO SOBRE NOSOTROS ===================== -->
-    <section>
-      <h2>Sobre nosotros</h2>
-      <p>En <strong>TAWENO SUSHI</strong> creemos que la gastronomía japonesa es un arte. Trabajamos con ingredientes
-        frescos seleccionados cada día para ofrecerte siempre la mejor experiencia.</p>
+    <section class="seccion-nosotros">
+      <div class="texto-nosotros">
+        <h2>Sobre nosotros</h2>
+        <p>En <strong>TAWENO SUSHI</strong> creemos que la gastronomía japonesa es un arte. Trabajamos con ingredientes
+          frescos seleccionados cada día para ofrecerte siempre la mejor experiencia.</p>
+      </div>
+      <div class="info-nosotros">
+        <div class="margen">
+          <span>8+</span>
+          <small>Años</small>
 
-      <span>8+</span>
-      <small>Años</small>
+          <span>2</span>
+          <small>Locales</small>
 
-      <span>2</span>
-      <small>Locales</small>
-
-      <span>40+</span>
-      <small>Productos</small>
+          <span>40+</span>
+          <small>Productos</small>
+        </div>
+      </div>
     </section>
     <!-- ===================== FIN SOBRE NOSOTROS ===================== -->
 
 
     <!-- ===================== INICIO CONTACTO ===================== -->
-    <section class="container seccion-contacto">
-      <article class="Contacto-">
-        <div>
+    <section class="seccion-contacto">
+      <article class="ontacto-">
+        <div info-contacto>
           <h2>Contáctanos</h2>
           <p class="texto-gris">Reservas o consultas. Respondemos en menos de 24 horas.</p>
           <ul class="texto-gris">
@@ -150,12 +164,10 @@
   <footer class="footer">
       <div class="contenido-superior">
         <div class="columna1">
-          <div>
-            <h3 class="texto-blanco">TAWENO SUSHI</h3>
-          <div>
-            <p class="texto-gris">Sushi auténtico preparado con ingredientes frescos del día.</p>
-          </div>
+          <h3 class="texto-blanco">TAWENO SUSHI</h3>
+          <p class="texto-gris">Sushi auténtico preparado con ingredientes frescos del día.</p>
         </div>
+
         <div class="columna2">
           <h4 class="texto-blanco">Locales</h4>
           <ul class="texto-gris">
@@ -164,8 +176,9 @@
           </ul>
         </div>
       </div>
+
     <div class="contenido-inferior">
-      <p class="texto-gris">© 2026 TAWENO SUSHI. Todos los derechos reservados.</p>
+      <p >© 2026 TAWENO SUSHI. Todos los derechos reservados.</p>
     </div>
   </footer>
 

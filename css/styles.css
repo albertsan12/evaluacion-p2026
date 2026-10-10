@@ -15,6 +15,8 @@ html {
   box-sizing: inherit;
 }
 
+/**header**/
+
 img {
   max-width: 100%;
 }
@@ -26,10 +28,50 @@ body {
 
 .header {
   background-color: #ffffff;
+  padding: 1.6rem;
+  display: flex;
+}
+
+.titulo {
+  display: flex;
+  padding-right: 100rem;
+
+}
+
+.titulo a {
+  color:#1a1a1a;
+  padding: 1.6rem;
+  text-decoration: none;
+
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: end;
+  color: black;
+  justify-content: flex-end;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.nav-items li {
+  list-style: none;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  padding: 1rem;
+  color: #555555;
 }
 
 .hero {
   background-color: black;
+  padding: 6.4rem;
 }
 
 .subtitulo-rojo {
@@ -50,38 +92,152 @@ body {
   padding: 1.5rem;
 }
 
-.footer {
-  background-color: black;
-}
-
 .texto-gris {
   color: silver;
 }
 
-.seccion-pedidos {
-  background-color: silver;
-}
+/**menu**/
 
 .menu {
   display: flex;
+  justify-content: space-between;
 }
 
-.seccion.contacto {
+.subtitulo-menu {
+  margin: 0;
   display: flex;
-  background-color: f2f0eb;
+}
+.menu-subtitulo h2{
+  flex-direction: column;
+  margin: 0;
 }
 
-.navbar {
+.container {
+  width: 100rem;
+  margin: 0 auto;
   display: flex;
-  justify-content: end;
-  text-decoration: none;
-  color: black;
+}
+
+.cards {
+  display: flex;
+}
+.card-sushi {
+  border: 0.1rem solid #e0ddd5;
+  padding: 4rem;
+  border-radius: 1.6rem;
+  flex-basis: calc(33% - 1rem);
+}
+
+/**pedidos**/
+
+.seccion-pedidos {
+  background-color: #f2f0eb;
+  padding: 4.8rem;
+}
+
+.contenedor-pedidos {
+  display: flex;
+  width: 4.8rem;
+  justify-content: 4.8rem;
+  flex-basis: 30%;
+  padding-right: 100rem;
+  width: 90%;
+}
+
+.cards-pedidos ul {
+  flex-direction: column;
+}
+
+.cards-pedidos li {
+  list-style: none;
+}
+
+/**nosotros**/
+.seccion-nosotros {
+  background-color: #ffffff;
+  display: flex;
+  padding: 4.8rem;
+}
+
+.texto-nosotros {
+  display: flex;
+}
+
+.info-nosotros {
+  display: flex;
+  padding-left: 50rem;
+  padding-right: 10rem;
+}
+
+.margen {
+  border: 0.1rem solid #e0ddd5;
+}
+/**contacto**/
+.seccion-contacto{
+  background-color: #f2f0eb;
+  padding: 4.8rem;
+}
+
+.contacto {
+  display: flex;
+}
+
+.formulario {
+  flex-direction: column;
+}
+
+/**footer**/
+
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 3.6rem 2rem;
 }
 
 .contenido-superior {
   display: flex;
+  margin-right: 5rem;
+  flex-direction: row;
+  justify-content: space-between;
+  
 }
 
-contenido-inferior {
-  align-items: end;
+.columna1 h3 {
+  color: #ffffff;
 }
+
+.columna1 p {
+  color: #888888;
+}
+
+.columna2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.columna2 h4 {
+  margin: 0;
+  color: #ffffff;
+}
+
+.columna2 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.columna2 li{
+  color: #888888;
+  text-decoration: none;
+}
+
+.contenido-inferior {
+  border-top: solid white 0.1rem;
+}
+
+.contenido-inferior p {
+  text-align: center;
+}
+
