@@ -70,26 +70,29 @@ body {
 }
 
 .hero {
-  background-color: black;
+  background-color: #000000;
   padding: 6.4rem;
 }
 
 .subtitulo-rojo {
-  color: red;
+  color: #c0392b;
 }
 
 .subtitulo-blanco {
-  color: white;
+  color: #ffffff;
 }
 
 .texto-blanco {
-  color: white;
+  color: #555555;
+  padding-bottom: 2rem;
 }
 
-.btn{
+.btn-header{
+  background-color: #c0392b;
   text-decoration: none;
-  color: red;
-  padding: 1.5rem;
+  color: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 .texto-gris {
@@ -98,82 +101,168 @@ body {
 
 /**menu**/
 
-.menu {
+.seccion-menu {
+  background-color: #ffffff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.seccion-menu article {
+  padding: 4.8rem;
 }
 
 .subtitulo-menu {
-  margin: 0;
   display: flex;
-}
-.menu-subtitulo h2{
-  flex-direction: column;
-  margin: 0;
 }
 
-.container {
-  width: 100rem;
-  margin: 0 auto;
-  display: flex;
+.subtitulo-menu h2{
+  color:#1a1a1a;
+  padding: 2.6rem 2.8rem;
+  margin: 0;
+  padding-left: 0.9rem;
 }
+
 
 .cards {
   display: flex;
+  flex-direction: row;
 }
 .card-sushi {
-  border: 0.1rem solid #e0ddd5;
-  padding: 4rem;
+  display: flex;
+  border: 0.2rem solid #e0ddd5;
+  padding: 1rem;
   border-radius: 1.6rem;
-  flex-basis: calc(33% - 1rem);
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0.8rem;
+}
+
+.card-sushi img {
+  display: flex;
+  height: 20rem;
+  justify-content: center;
+}
+
+.card-sushi h3 {
+  display: flex;
+  padding: 1.8rem;
+  color: #1a1a1a;
+  margin: 0;
+  justify-content: center;
+}
+
+.card-sushi p {
+  color: #555555;
+  padding: 1.4rem;
+  margin: 0;
+  text-align: center;
+}
+
+.card-sushi span {
+  color: #c0392b;
+  padding: 1.6rem;
+  justify-content: center;
+  text-align: center;
 }
 
 /**pedidos**/
 
 .seccion-pedidos {
+  display: flex;
   background-color: #f2f0eb;
   padding: 4.8rem;
 }
 
-.contenedor-pedidos {
+.texto-pedidos {
   display: flex;
-  width: 4.8rem;
-  justify-content: 4.8rem;
-  flex-basis: 30%;
-  padding-right: 100rem;
-  width: 90%;
+  padding: 4.8rem;
+  flex-basis: calc(30% - 4.8rem);
 }
 
-.cards-pedidos ul {
+.cards-pedidos {
+  display: flex;
   flex-direction: column;
+  flex-basis: calc(30% - 40.8rem);
 }
 
-.cards-pedidos li {
-  list-style: none;
+.card-pedido {
+  display: flex;
+  flex-basis: 65%;
+  margin-left: 30rem;
 }
+
+
+.parrafo-pedido {
+  display: flex;
+  padding: 0.1rem;
+  margin-left: 5rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.span-pedido {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 5rem;
+  align-items: center;
+  justify-content: end;
+  flex-direction: row;
+  color: #c0392b;
+}
+
 
 /**nosotros**/
 .seccion-nosotros {
   background-color: #ffffff;
   display: flex;
+
+}
+
+.contenedor-nosotros {
+  display: flex;
+  align-items: center;
   padding: 4.8rem;
 }
 
 .texto-nosotros {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  flex-direction: column;
+}
+
+.texto-nosotros p{
+  padding: 1.6rem;
+  color: #555555;
 }
 
 .info-nosotros {
   display: flex;
-  padding-left: 50rem;
-  padding-right: 10rem;
+  flex-basis: 45%;
+  margin-left: 5rem;
+  margin-top: 4rem;
 }
 
 .margen {
+  display: flex;
   border: 0.1rem solid #e0ddd5;
+  padding: 3rem  1.8rem;
+  margin-right: 5rem;
 }
+
+.margen span small {
+  display: flex;
+  align-items: center;
+  padding: 3rem 1.8rem;
+}
+
+
 /**contacto**/
+
 .seccion-contacto{
+  display: flex;
   background-color: #f2f0eb;
   padding: 4.8rem;
 }
@@ -182,8 +271,40 @@ body {
   display: flex;
 }
 
-.formulario {
+.info-contacto {
+  display: flex;
   flex-direction: column;
+  padding-right: 30rem;
+}
+
+.info-contacto li {
+  list-style: none;
+}
+
+.formulario {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border: 0.2rem solid #e0ddd5;
+  border-radius: 0.5rem;
+  width: 50%;
+  padding: 4.8rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  color: #e0ddd5;
+  margin-left: 15rem;
+  margin-right: 15rem;
+
+}
+
+.btn-form {
+  background-color: #c0392b;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  color: #ffffff;
 }
 
 /**footer**/
@@ -192,7 +313,8 @@ body {
   background-color: black;
   display: flex;
   flex-direction: column;
-  padding: 3.6rem 2rem;
+  padding-top: 3.6rem;
+  padding-bottom: 2rem;
 }
 
 .contenido-superior {
@@ -234,10 +356,10 @@ body {
 }
 
 .contenido-inferior {
-  border-top: solid white 0.1rem;
+  border-top: solid #888888 0.1rem;
 }
 
 .contenido-inferior p {
   text-align: center;
+  color: #888888;
 }
-
